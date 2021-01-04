@@ -54,8 +54,14 @@ a {
     background-size: cover;
     background-position: left bottom;
     height: 100vh;
+        
+}
+#hero .hero_container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    
+    height: 100vh;
 }
 #hero h1 {
     font-size: 64px;
@@ -72,6 +78,7 @@ a {
 button {
     border-radius: 8px;
     border: none;
+    
     background-color: var(--orange);
     padding: 8px 12px;
     font-weight: 800;
