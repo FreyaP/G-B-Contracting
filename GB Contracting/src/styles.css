@@ -8,6 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: var(--fontGrey);
+    margin: 0;
 }
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
@@ -18,7 +19,7 @@ h1, h2, h3 {
 #header {
     position: fixed;
     top: 0;
-    min-height: 75px;
+    min-height: 60px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@ h1, h2, h3 {
     display: flex;
     padding: 0;
     justify-content: space-around;
-    width: 50vw;
+    width: 65vw;
 }
 li {
     list-style: none;
@@ -43,15 +44,38 @@ li {
 a {
     text-decoration: none;
     color: var(--fontGrey);
-}
-#hero {
-    margin-top: 75px;
     text-transform: uppercase;
 }
+#hero {
+    margin-top: 60px;
+    text-transform: uppercase;
+    background-image: url('images/heroBkgrnd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 100vh;
+    display: grid;
+    
+}
+#hero h1 {
+    font-size: 64px;
+    color: var(--white);
+    margin: 0px 0px 0px 40px;
+    align-self: end;
+}
+#hero h2 {
+    font-size: 32px;
+    color: var(--white);
+    margin: 0px 0px 0px 40px;
+    align-self: center;
+}
 button {
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     background-color: var(--orange);
-    padding: 8px;
-    
+    padding: 8px 12px;
+    font-weight: 800;
+    margin-left: 40px;
+align-self: start;
+justify-self: start;
 }
