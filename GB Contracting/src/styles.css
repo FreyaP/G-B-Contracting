@@ -25,6 +25,7 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     background: #ffffff;
+    z-index: 1;
 }
 #navbar {
     display: flex;
@@ -100,10 +101,19 @@ justify-self: start;
     font-size: 40px;
     text-transform: uppercase;
 }
+#services p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    width: 90%;
+}
 #services .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(50px 200px));
+    grid-template-rows: repeat(2, 40vh);
     grid-gap: 45px;
 }
 #services .grid-image {
@@ -128,3 +138,4 @@ justify-self: start;
     justify-content: center;
     align-content: center;
 }
+/*About Styling*/
