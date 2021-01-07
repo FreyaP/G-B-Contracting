@@ -194,3 +194,63 @@ justify-self: start;
      object-fit: cover;
      object-position: bottom;
  }
+ /*Bottom Section*/
+ .bottom_section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     background-color: var(--backgroundGrey);
+     color: var(--white);
+     margin-top: 50px;
+     
+ }
+ #contact {
+     display: grid;
+     justify-items: center;
+ }
+ #contact h2 {
+     padding-top: 60px;
+     text-transform: uppercase;
+     font-size: 32px;
+ }
+ #contact form {
+     padding-bottom: 0;
+     width: 80%;
+ }
+ #contact label {
+     display: flex;
+     padding: 20px 0 10px 0;
+ }
+ #contact #submit {
+     display: block;
+     margin-left: 0;
+     margin-top: 20px;
+ }
+ :hover#submit {
+     cursor: pointer;
+ }
+
+
+ #testimonials {
+     margin-left: auto;
+     margin-right: auto;
+     display: grid;
+ }
+
+ #testimonials h2 {
+     padding-top: 60px;
+     text-transform: uppercase;
+     font-size: 32px;
+     text-align: center;
+     padding-bottom: 10px;
+ }
+ #testimonials blockquote {
+     text-align: justify;
+     display: grid;
+     justify-items: center;
+ }
+ #testimonials .name {
+     color: var(--orange);
+     font-size: 14px;
+     
+     
+ }
