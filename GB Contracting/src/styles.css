@@ -175,6 +175,7 @@ justify-self: start;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
  }
  #projects h2 {
     padding-top: 60px;
@@ -197,6 +198,7 @@ justify-self: start;
  /*Bottom Section*/
  .bottom_section {
      display: grid;
+     grid-gap: 15px;
      grid-template-columns: repeat(2, 1fr);
      background-color: var(--backgroundGrey);
      color: var(--white);
@@ -206,19 +208,28 @@ justify-self: start;
  #contact {
      display: grid;
      justify-items: center;
+     grid-template-rows: 200px 1fr;
  }
  #contact h2 {
      padding-top: 60px;
      text-transform: uppercase;
      font-size: 32px;
+     text-align: center;
  }
  #contact form {
      padding-bottom: 0;
-     width: 80%;
+     width: 70%;
  }
  #contact label {
      display: flex;
      padding: 20px 0 10px 0;
+ }
+ #contact input {
+     width: 100%;
+ }
+ #contact textarea {
+     width: 100%;
+     height: auto;
  }
  #contact #submit {
      display: block;
@@ -234,6 +245,7 @@ justify-self: start;
      margin-left: auto;
      margin-right: auto;
      display: grid;
+     grid-template-rows: 200px 1fr 1fr;
  }
 
  #testimonials h2 {
