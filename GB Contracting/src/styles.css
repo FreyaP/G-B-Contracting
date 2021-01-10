@@ -208,7 +208,7 @@ justify-self: start;
  #contact {
      display: grid;
      justify-items: center;
-     grid-template-rows: 200px 1fr;
+     grid-template-rows: 150px 1fr;
  }
  #contact h2 {
      padding-top: 60px;
@@ -233,19 +233,33 @@ justify-self: start;
  }
  #contact #submit {
      display: block;
-     margin-left: 0;
+     margin-right: 0;
+     margin-left: auto;
      margin-top: 20px;
  }
  :hover#submit {
      cursor: pointer;
  }
+ #contact .contact_details {
+     width: 70%;
+     display: grid;
+     grid-template-columns: min-content 1fr;
+     align-items: center;
+     margin-top: 20px;
+     font-size: 12px;
+     padding-bottom: 20px;
+ }
 
-
+#contact i {
+    color: var(--orange);
+    font-size: 20px;
+    margin-right: 8px;
+}
  #testimonials {
      margin-left: auto;
      margin-right: auto;
      display: grid;
-     grid-template-rows: 200px 1fr 1fr;
+     grid-template-rows: 150px 1fr 1fr;
  }
 
  #testimonials h2 {
@@ -263,6 +277,18 @@ justify-self: start;
  #testimonials .name {
      color: var(--orange);
      font-size: 14px;
+ }
+ #footer {
+     background-color: #0c0e0f;
+     color: var(--white);
+     text-align: center;
+     font-size: 12px;
+     padding: 20px 0;
+ }
+ #footer .freya {
+     color: var(--fontGrey);
      
-     
+ }
+ #footer .freya a {
+     text-transform: none;
  }
