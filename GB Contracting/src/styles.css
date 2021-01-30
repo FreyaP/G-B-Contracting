@@ -120,10 +120,11 @@ justify-self: start;
     grid-gap: 40px;
 }
 #services .grid-image {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     overflow: hidden;
+    display: grid;
+    grid-column: span 1;
+    grid-row: span 1;
+    
 }
 #services img {
     grid-column: 1 / -1;
@@ -135,11 +136,17 @@ justify-self: start;
 #services .image__overlay {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    background-color: var(--backgroundGrey);
-    opacity: 0.6;
+    position: relative;
+    background-color: rgba(39, 45, 49, 0.8);
+    color: var(--white);
     display: grid;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: start;
+    transition: 0.5s;
+    transform: translateY(80%);
+}
+.grid-image:hover .image__overlay {
+    transform: translateY(0) !important;
 }
 /*About Styling*/
 #about {    
@@ -161,6 +168,7 @@ justify-self: start;
     background: var(--backgroundGrey);
     color: var(--white);
     padding: 40px;
+
 }
 #about h2 {
     font-size: 40px;
@@ -171,6 +179,13 @@ justify-self: start;
     font-size: 16px;
     text-align: justify;
     line-height: 1.5;
+}
+#about_contact_button {
+    display: block;
+    margin: 30px auto 10px auto;
+}
+#about_contact_button a {
+    color: var(--backgroundGrey);
 }
  /*Projects Styling*/
  #projects {
