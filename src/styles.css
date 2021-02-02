@@ -174,7 +174,7 @@ justify-self: start;
         grid-row: 2 / 3;
     }
     #services .image__overlay {
-        transform: translateY(50%);
+        transform: translateY(100%);
         padding: 0 30px 50px 30px;
     }
 }
