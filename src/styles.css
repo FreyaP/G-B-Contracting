@@ -300,6 +300,9 @@ a {
   font-size: 20px;
   margin-right: 8px;
 }
+#contact a {
+  text-transform: none;
+}
 #testimonials {
   margin-left: auto;
   margin-right: auto;
