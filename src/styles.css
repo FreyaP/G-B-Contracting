@@ -81,10 +81,11 @@ a {
   margin: 0px 0px 0px 40px;
   align-self: center;
 }
-button {
+.button {
   border-radius: 8px;
   border: none;
   background-color: var(--orange);
+  color: var(--backgroundGrey);
   padding: 10px 14px;
   font-weight: 800;
   margin-left: 40px;
@@ -187,6 +188,7 @@ button {
   background: var(--backgroundGrey);
   color: var(--white);
   padding: 40px;
+  text-align: center;
 }
 #about h2 {
   font-size: 40px;
@@ -199,7 +201,7 @@ button {
   line-height: 1.5;
 }
 #about_contact_button {
-  display: block;
+  display: inline;
   margin: 30px auto 10px auto;
 }
 #about_contact_button a {
