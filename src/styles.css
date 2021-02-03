@@ -280,6 +280,7 @@ a {
   margin-left: auto;
   margin-top: 20px;
   color: var(--backgroundGrey);
+  font-weight: 600;
 }
 :hover#submit {
   cursor: pointer;
