@@ -158,12 +158,12 @@ a {
   margin-right: auto;
   padding-top: 60px;
 }
-#about .about_grid {
+.about_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (max-width: 690px) {
-  #about .about_grid {
+  .about_grid {
     grid-template-columns: 1fr;
   }
   #about .about_description {
@@ -194,11 +194,13 @@ a {
   font-size: 40px;
   text-transform: capitalize;
   text-align: center;
+  margin-top: 10px;
 }
 #about p {
   font-size: 16px;
   text-align: justify;
   line-height: 1.5;
+  margin-top: 3rem;
 }
 #about_contact_button {
   display: inline;
@@ -332,14 +334,15 @@ a {
   color: var(--white);
   text-align: center;
   font-size: 12px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
-#footer div {
+.footer_grid {
   display: grid;
   grid-template-columns: min-content 1fr;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 #footer i {
   font-size: 18px;
