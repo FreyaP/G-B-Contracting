@@ -1,8 +1,10 @@
 :root {
-  --orange: #ff9668;
-  --fontGrey: #4c4c4c;
-  --backgroundGrey: #272d31;
-  --white: #ffffff;
+  --orange: #eb714a;
+  --fontGrey: #334d5e;
+  --backgroundGrey: #334d5e;
+  --white: #ced9d5;
+  --purple: #520841;
+  --lightBlue: #407da9;
 }
 * {
   box-sizing: border-box;
@@ -18,6 +20,9 @@ h2,
 h3 {
   font-family: "Roboto", sans-serif;
 }
+.nav-padding {
+  padding-top: 5rem;
+}
 .container {
   min-width: 600px;
 }
@@ -31,6 +36,11 @@ h3 {
   align-items: center;
 
   z-index: 1;
+}
+#header-img {
+  width: 5rem;
+  height: auto;
+  margin: 1rem;
 }
 #navbar {
   display: flex;
@@ -51,6 +61,7 @@ a {
   text-transform: uppercase;
   padding: 3px;
   color: var(--white);
+  font-weight: 700;
 }
 .navLink:hover {
   border: 2px solid var(--white);
@@ -75,7 +86,7 @@ a {
 #hero h1 {
   font-size: 64px;
   color: var(--white);
-  margin: 0px 0px 20px 0px;
+  margin: 0;
   align-self: end;
 }
 #hero h2 {
@@ -106,7 +117,7 @@ a {
   margin-bottom: 40px;
 }
 #services h2 {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   margin-top: 0;
   font-size: 40px;
   text-transform: uppercase;
@@ -221,7 +232,7 @@ a {
   margin-top: 20px;
 }
 #projects h2 {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   margin-top: 0;
   font-size: 40px;
   text-transform: uppercase;
@@ -276,7 +287,7 @@ figcaption {
   grid-template-rows: 150px 1fr;
 }
 #contact h2 {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   text-transform: uppercase;
   font-size: 32px;
   text-align: center;
