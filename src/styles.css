@@ -168,7 +168,7 @@ a {
 }
 /*About Styling*/
 #about {
-  width: 100%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
