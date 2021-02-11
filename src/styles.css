@@ -44,15 +44,13 @@ h3 {
   margin: 1rem;
 }
 #navbar {
-  display: flex;
-  justify-content: end;
+  width: 60vw;
   margin-right: 2em;
 }
 #navItems {
   display: flex;
   padding: 0;
   justify-content: space-around;
-  width: 60vw;
 }
 li {
   list-style: none;
@@ -294,7 +292,6 @@ figcaption {
   grid-template-rows: 150px 1fr;
 }
 #contact h2 {
-  /*padding-top: 60px;*/
   text-transform: uppercase;
   font-size: 32px;
   text-align: center;
@@ -352,7 +349,6 @@ figcaption {
 }
 
 #testimonials h2 {
-  padding-top: 60px;
   text-transform: uppercase;
   font-size: 32px;
   text-align: center;
