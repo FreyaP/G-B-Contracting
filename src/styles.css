@@ -420,6 +420,9 @@ figcaption {
     color: #ffffff;
     font-size: 2rem;
   }
+  [aria-controls="navItems"]:hover {
+    cursor: pointer;
+  }
   [aria-expanded="true"] ~ ul {
     flex-direction: column;
     max-height: 100vh;
