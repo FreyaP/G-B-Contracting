@@ -435,4 +435,7 @@ figcaption {
   [aria-expanded="true"] .close {
     display: inline-block;
   }
+  .navLink:hover {
+    border: none;
+  }
 }
