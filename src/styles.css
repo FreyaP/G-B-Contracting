@@ -35,7 +35,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   z-index: 1;
 }
 #header-img {
@@ -46,6 +45,9 @@ h3 {
 #navbar {
   width: 60vw;
   margin-right: 2em;
+}
+[aria-controls="navItems"] {
+  display: none;
 }
 #navItems {
   display: flex;
@@ -175,30 +177,7 @@ a {
   display: grid;
   grid-template-columns: 30fr 70fr;
 }
-@media screen and (max-width: 850px) {
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-  #hero h2 {
-    font-size: 2rem;
-  }
-  .about_grid {
-    grid-template-columns: 1fr;
-  }
-  #about .about_description {
-    grid-row: 1 / 2;
-  }
-  #about img {
-    display: none;
-  }
-  #about p {
-    padding: 0px;
-  }
-  #services .image__overlay {
-    transform: translateY(100%);
-    /*padding: 0 30px 50px 30px;*/
-  }
-}
+
 #about img {
   max-width: 100%;
   height: 100%;
@@ -281,11 +260,7 @@ figcaption {
   color: var(--white);
   margin-top: 50px;
 }
-@media screen and (max-width: 950px) {
-  .bottom_section {
-    grid-template-columns: 1fr;
-  }
-}
+
 #contact {
   display: grid;
   justify-items: center;
@@ -395,4 +370,69 @@ figcaption {
 #footer .freya {
   color: var(--fontGrey);
   text-transform: none;
+}
+@media screen and (max-width: 950px) {
+  .bottom_section {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  #hero h2 {
+    font-size: 2rem;
+  }
+  .about_grid {
+    grid-template-columns: 1fr;
+  }
+  #about .about_description {
+    grid-row: 1 / 2;
+  }
+  #about img {
+    display: none;
+  }
+  #about p {
+    padding: 0px;
+  }
+  #services .image__overlay {
+    transform: translateY(100%);
+    /*padding: 0 30px 50px 30px;*/
+  }
+}
+@media screen and (max-width: 700px) {
+  ul {
+    transform: rotateX(90deg);
+    transition: all 0.5s;
+    order: -1;
+    max-height: 0;
+  }
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    perspective: 700px;
+  }
+  [aria-controls="navItems"] {
+    display: block;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  [aria-expanded="true"] ~ ul {
+    flex-direction: column;
+    max-height: 100vh;
+    transform: rotateX(0);
+    /*padding: 0.5rem;*/
+  }
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
 }
