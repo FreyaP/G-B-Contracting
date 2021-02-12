@@ -438,4 +438,7 @@ figcaption {
   .navLink:hover {
     border: none;
   }
+  li {
+    padding: 0.5rem;
+  }
 }
