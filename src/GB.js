@@ -1,6 +1,4 @@
-window.onscroll = () => { scrollFunction()};
-
-function scrollFunction() {
+window.onscroll = () => {
     var links = document.getElementsByClassName("navLink");
     var i;
 
@@ -22,9 +20,8 @@ function scrollFunction() {
 }
 
 const hamburger = document.querySelector('button[aria-expanded]');
-function toggleNav({ target }) {
+
+hamburger.addEventListener('click', ({ target }) => {
     const expanded = target.getAttribute('aria-expanded') === 'true' || false;
     hamburger.setAttribute('aria-expanded', !expanded);
-}
-
-hamburger.addEventListener('click', toggleNav);
+})
