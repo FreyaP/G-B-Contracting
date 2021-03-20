@@ -24,6 +24,7 @@
         <link rel="shortcut icon" href="src/images/LogoOrange.png" type="image/x-icon">
     
         <link rel="stylesheet" href="src/styles.css">
+        <link rel="stylesheet" href="src/normalize.css">
         <script src="src/GB.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,12 +35,14 @@
     <div class="container">
         <header id="header">
     <a href="#">
-            <img id="header-img" src="src/images/LogoOrange.png" alt="G&B logo">
+            <img id="header-img" srcset="src/images/LogoOrange.png 1x, src/images/LogoOrange@2x.png 2x" src="src/images/LogoOrange.png" alt="G&B logo">
         </a>
             <nav id="navbar">
                 <button aria-expanded="false" aria-controls="navItems">
+                    
                     <i class="fas fa-bars open"></i>
-                    <i class="far fa-times-circle close"></i>
+                    
+                    <i class="far fa-times-circle close" id="close-icon"></i>
                 </button>
                 <ul id="navItems">
                     <li>
@@ -118,7 +121,7 @@
         </div>
         </section>
         <section id="about" class="about_grid">
-                <img src="src/images/PeteAndBowen.png" alt="Pete Glover (Owner) and Bowen of G&B Contracting">
+                <img src="src/images/PeteAndBowen.png" alt="Pete Glover (Owner) and Bowen (man's best friend) of G&B Contracting">
                 <article class="about_description">
                     <h2>We are Glover & Bowen</h2>
                     <p>Glover &amp; Bowen are here to take care of all of your property needs. We specialize in small to medium sized renovations, with over 20 years experience across multiple trades. We are based in Whistler, but proud to work throughout the Sea to Sky Corridor.<br><br>G & B are passionate about working with you to come up with innovative ideas and plans for your next project. Our drive is to transform your vision and make it a reality.</p>
@@ -146,7 +149,7 @@
             <figcaption>Structure before staining</figcaption>
         </figure>
         <figure>
-                <img src="src/images/stainingAfter.png" alt="Complted staining on outdoor structure">
+                <img src="src/images/stainingAfter.png" alt="Completed staining on outdoor structure">
             <figcaption>Completed structure stain</figcaption>
             </figure>
             </div>

@@ -21,7 +21,12 @@ window.onscroll = () => {
 
 const hamburger = document.querySelector('button[aria-expanded]');
 
+
 hamburger.addEventListener('click', ({ target }) => {
     const expanded = target.getAttribute('aria-expanded') === 'true' || false;
     hamburger.setAttribute('aria-expanded', !expanded);
+   
 })
+
+
+

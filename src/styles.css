@@ -12,14 +12,14 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: var(--fontGrey);
   margin: 0;
 }
 h1,
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .nav-padding {
   padding-top: 5rem;
@@ -30,7 +30,8 @@ h3 {
 #header {
   position: fixed;
   top: 0;
-  min-height: 3em;
+  min-height: 2rem;
+
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -46,8 +47,15 @@ h3 {
   width: 60vw;
   margin-right: 2em;
 }
-[aria-controls="navItems"] {
+#navbar button {
+  outline: none;
+  z-index: 1000;
+}
+[aria-controls='navItems'] {
   display: none;
+}
+#navbar button > i {
+  pointer-events: none;
 }
 #navItems {
   display: flex;
@@ -70,7 +78,7 @@ a {
 /*Hero section styling*/
 #hero {
   text-transform: uppercase;
-  background-image: url("images/heroBkgrnd.png");
+  background-image: url('images/heroBkgrnd.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -128,7 +136,7 @@ a {
   margin-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
-  text-align: justify;
+  text-align: center;
   width: 90%;
 }
 #services .grid {
@@ -166,6 +174,7 @@ a {
 #services .grid-image:focus .image__overlay {
   transform: translateY(0);
 }
+
 /*About Styling*/
 #about {
   max-width: 100%;
@@ -285,7 +294,7 @@ figcaption {
 #contact textarea {
   width: 100%;
   height: auto;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 #contact #submit {
   display: block;
@@ -396,7 +405,11 @@ figcaption {
     padding: 0px;
   }
   #services .image__overlay {
-    transform: translateY(100%);
+    grid-template-rows: min-content 1fr;
+    align-items: start;
+    transform: translateY(0%);
+    background-color: rgba(39, 45, 49, 0.6);
+
     /*padding: 0 30px 50px 30px;*/
   }
 }
@@ -412,7 +425,7 @@ figcaption {
     justify-content: flex-end;
     perspective: 700px;
   }
-  [aria-controls="navItems"] {
+  [aria-controls='navItems'] {
     display: block;
     text-align: right;
     background-color: rgba(255, 255, 255, 0);
@@ -420,21 +433,21 @@ figcaption {
     color: #ffffff;
     font-size: 2rem;
   }
-  [aria-controls="navItems"]:hover {
+  [aria-controls='navItems']:hover {
     cursor: pointer;
   }
-  [aria-expanded="true"] ~ ul {
+  [aria-expanded='true'] ~ ul {
     flex-direction: column;
     max-height: 100vh;
     transform: rotateX(0);
   }
-  [aria-expanded="false"] .close {
+  [aria-expanded='false'] .close {
     display: none;
   }
-  [aria-expanded="true"] .open {
+  [aria-expanded='true'] .open {
     display: none;
   }
-  [aria-expanded="true"] .close {
+  [aria-expanded='true'] .close {
     display: inline-block;
   }
   .navLink:hover {
